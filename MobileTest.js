@@ -40,6 +40,30 @@ if (Meteor.isClient) {
           name: 'description'
         }
       ]
+    },
+    Speakers: {
+      tableColumns: [
+        {
+          label: 'First Name',
+          name: 'fname'
+        }, {
+          label: 'Email',
+          name: 'email'
+        }
+      ]
+
+    },
+    Attendees: {
+      tableColumns: [
+        {
+          label: 'First Name',
+          name: 'fname'
+        }, {
+          label: 'Email',
+          name: 'email'
+        }
+      ]
+
     }
     }
   }
@@ -74,6 +98,30 @@ if (Meteor.isServer) {
           name: 'description'
         }
       ]
+    },
+    Speakers: {
+      tableColumns: [
+        {
+          label: 'First Name',
+          name: 'fname'
+        }, {
+          label: 'Email',
+          name: 'email'
+        }
+      ]
+
+    },
+    Attendees: {
+      tableColumns: [
+        {
+          label: 'First Name',
+          name: 'fname'
+        }, {
+          label: 'Email',
+          name: 'email'
+        }
+      ]
+
     }
     }
   }
