@@ -1,6 +1,7 @@
 if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
+  // Meteor.logout();
 
   Template.hello.helpers({
     counter: function () {
@@ -18,8 +19,28 @@ if (Meteor.isClient) {
     adminEmails: ['bankim@motifworks.com'],
     collections:
     {
-    Events: {},
-    ESessions: {}
+    Eventos: {
+      tableColumns: [
+        {
+          label: 'Title',
+          name: 'title'
+        }, {
+          label: 'Venue',
+          name: 'venuename',
+        }
+      ]
+    },
+    eSessions: {
+      tableColumns: [
+        {
+          label: 'Title',
+          name: 'title'
+        }, {
+          label: 'Description',
+          name: 'description'
+        }
+      ]
+    }
     }
   }
 }
@@ -32,8 +53,28 @@ if (Meteor.isServer) {
     adminEmails: ['bankim@motifworks.com'],
     collections:
     {
-    Events: {},
-    ESessions: {}
+    Eventos: {
+      tableColumns: [
+        {
+          label: 'Title',
+          name: 'title'
+        }, {
+          label: 'Venue',
+          name: 'venuename',
+        }
+      ]
+    },
+    eSessions: {
+      tableColumns: [
+        {
+          label: 'Title',
+          name: 'title'
+        }, {
+          label: 'Description',
+          name: 'description'
+        }
+      ]
+    }
     }
   }
 }
