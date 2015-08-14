@@ -1,0 +1,14 @@
+<template name="layout">
+<head>
+  <title>Custom Registration Tutorial</title>
+</head>
+<body>
+  {{#if currentUser}}
+      <p>You're logged in.</p>
+  {{else}}
+      {{> register}}
+      {{> login}}
+  {{/if}}
+</body>
+
+</template>
