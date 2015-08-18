@@ -16,3 +16,8 @@ twbs:bootstrap
 fortawesome:fontawesome
 yogiben:admin
 autopublish
+notorii:autoform-datetimepicker
+tsega:bootstrap3-datetimepicker@=3.1.3_3
+aldeed:autoform
+mrt:moment-timezone
+aldeed:autoform-bs-datetimepicker
